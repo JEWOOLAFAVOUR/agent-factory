@@ -9,12 +9,12 @@ crons = ["0 7,12,19 * * *"]
 
 [[kv_namespaces]]
 binding = "SEEN_KV"
-id = "REPLACE_WITH_KV_ID"
-preview_id = "REPLACE_WITH_KV_PREVIEW_ID"
+id = "d2c48af15ebb43f39d14e4ff2c4e1393"
+preview_id = "d2c48af15ebb43f39d14e4ff2c4e1393"
 
 [vars]
 TOPICS = "AI agents,developer tools,open source"
-TELEGRAM_CHAT_ID = "REPLACE_WITH_CHAT_ID"
+TELEGRAM_CHAT_ID = "6392974527"
 
 # Secrets (never commit). Set with:
 #   wrangler secret put TELEGRAM_BOT_TOKEN
