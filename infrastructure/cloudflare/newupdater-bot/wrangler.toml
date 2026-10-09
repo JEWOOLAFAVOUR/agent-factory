@@ -1,0 +1,23 @@
+name = "newupdater-bot"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+
+# 3x daily digests (UTC). Adjust to your timezone.
+# 07:00 morning, 12:00 afternoon, 19:00 night.
+[triggers]
+crons = ["0 7,12,19 * * *"]
+
+[[kv_namespaces]]
+binding = "SEEN_KV"
+id = "REPLACE_WITH_KV_ID"
+preview_id = "REPLACE_WITH_KV_PREVIEW_ID"
+
+[vars]
+TOPICS = "AI agents,developer tools,open source"
+TELEGRAM_CHAT_ID = "REPLACE_WITH_CHAT_ID"
+
+# Secrets (never commit). Set with:
+#   wrangler secret put TELEGRAM_BOT_TOKEN
+#   wrangler secret put GROQ_API_KEY
+#   wrangler secret put TWITTERAPIS_KEY
+#   wrangler secret put TELEGRAM_WEBHOOK_SECRET
